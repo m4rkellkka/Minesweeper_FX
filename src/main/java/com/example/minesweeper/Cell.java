@@ -21,14 +21,6 @@ public class Cell {
     // --- UI Element Associated with this Cell ---
     private final Button button;   // The JavaFX Button representing this cell on the screen
 
-    /**
-     * Constructs a new Cell object with specified row and column coordinates.
-     * Initializes the cell's logical state to default values (no mine, closed, no flags/questions).
-     * A new JavaFX Button is also created for this cell.
-     *
-     * @param row The row index of the cell.
-     * @param col The column index of the cell.
-     */
     public Cell(int row, int col) {
         this.row = row;
         this.col = col;
