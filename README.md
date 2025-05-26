@@ -23,16 +23,16 @@ This is a classic Minesweeper game implemented using JavaFX for the graphical us
 ## Screenshots
 
 **Start Screen:**
-![Start Screen](\images\start_screen.JPG)
+![Start Screen](/images/start_screen.JPG)
 
 **Game in Progress:**
-![Game in Progress](images\game_in_progress.JPG)
+![Game in Progress](/images/game_in_progress.JPG)
 
 **Leaderboard:**
-![Leaderboard](images\leaderboard.JPG)
+![Leaderboard](/images/leaderboard.JPG)
 
 **Win dialog:**
-![Win dialog](images\win.JPG)
+![Win dialog](/images/win.JPG)
 
 
 
@@ -42,7 +42,7 @@ To build and run this Minesweeper game, you will need Java Development Kit (JDK)
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/m4rkellkka/Minesweeper.git](https://github.com/m4rkellkka/Minesweeper.git)
+    git clone [https://github.com/m4rkellkka/Minesweeper_FX.git](https://github.com/m4rkellkka/Minesweeper_FX.git)
     cd Minesweeper
     ```
 
