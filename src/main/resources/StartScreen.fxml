@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="startLayout" prefHeight="300.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Label layoutX="43.0" layoutY="14.0" prefHeight="55.0" prefWidth="335.0" text="MINESWEEPER" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="☞Benzin Bold" size="32.0" />
+               </font>
+            </Label>
+            <Text fill="#75150e" layoutX="14.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your name:">
+               <font>
+                  <Font name="☞Benzin Bold" size="13.0" />
+               </font>
+            </Text>
+            <TextField id="nameField" fx:id="nameField" alignment="TOP_LEFT" blendMode="MULTIPLY" layoutX="162.0" layoutY="80.0" promptText="..." text="Mikhail Savushkin" />
+            <Button fx:id="easyButton" contentDisplay="CENTER" layoutX="99.0" layoutY="121.0" mnemonicParsing="false" onAction="#handleEasyClick" prefHeight="38.0" prefWidth="88.0" styleClass="easy-button" stylesheets="@style.css" text="EASY" textFill="#e4721a">
+               <font>
+                  <Font name="☞Benzin Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+            <Button fx:id="mediumButton" contentDisplay="CENTER" layoutX="205.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleMediumClick" prefHeight="38.0" prefWidth="88.0" styleClass="medium-button" stylesheets="@style.css" text="MEDIUM" textFill="#03861b">
+               <font>
+                  <Font name="☞Benzin Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+            <Button fx:id="hardButton" contentDisplay="CENTER" layoutX="311.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleHardClick" prefHeight="38.0" prefWidth="88.0" styleClass="hard-button" stylesheets="@style.css" text="HARD" textFill="#ff1a00">
+               <font>
+                  <Font name="☞Benzin Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+            <Button fx:id="startGameButton" contentDisplay="CENTER" layoutX="131.0" layoutY="168.0" mnemonicParsing="false" onAction="#handleStartGame" prefHeight="38.0" prefWidth="170.0" styleClass="new_game_button" stylesheets="@style.css" text="START GAME" textFill="#ff7105">
+               <font>
+                  <Font name="☞Benzin Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+            <Text fill="#75150e" layoutX="14.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dificulty:">
+               <font>
+                  <Font name="☞Benzin Bold" size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="leaderboardButton" contentDisplay="CENTER" layoutX="141.0" layoutY="212.0" mnemonicParsing="false" onAction="#showLeaderboardScreen" prefHeight="38.0" prefWidth="150.0" styleClass="leaderboardButton" stylesheets="@style.css" text="Leaderboard" textFill="#0080ff">
+               <font>
+                  <Font name="☞Benzin Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+            <Button fx:id="exitButton" contentDisplay="CENTER" layoutX="181.0" layoutY="256.0" mnemonicParsing="false" onAction="#handleExitButton" prefHeight="38.0" prefWidth="70.0" styleClass="ExitButton" stylesheets="@style.css" text="Exit" textFill="#0080ff">
+               <font>
+                  <Font name="☞Benzin Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
