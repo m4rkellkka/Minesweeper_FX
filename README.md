@@ -42,7 +42,7 @@ To build and run this Minesweeper game, you will need Java Development Kit (JDK)
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/m4rkellkka/Minesweeper_FX.git](https://github.com/m4rkellkka/Minesweeper_FX.git)
+    git clone https://github.com/m4rkellkka/Minesweeper_FX.git
     cd Minesweeper
     ```
 
