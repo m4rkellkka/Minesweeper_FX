@@ -1,0 +1,373 @@
+/* Общий базовый стиль для всех кнопок */
+.easy-button { /* ИЗМЕНИЛИ НАЗВАНИЕ КЛАССА */
+    -fx-background-color: transparent;
+    -fx-border-color: #03861b;
+    -fx-border-width: 2px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-text-fill: #3B3B3B;
+    -fx-cursor: hand;
+    -fx-font-family: "Benzin-Bold";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-pref-height: 30px;
+    -fx-pref-width: 100px;
+    -fx-padding: 8px 15px;
+    -fx-alignment: center;
+    -fx-transition: -fx-background-color 300ms cubic-bezier(.23, 1, 0.32, 1),
+    -fx-text-fill 300ms cubic-bezier(.23, 1, 0.32, 1),
+    -fx-effect 300ms cubic-bezier(.23, 1, 0.32, 1),
+    -fx-translate-y 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.easy-button:hover {
+    -fx-text-fill: #fff;
+    -fx-background-color: #03861b;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0, 0, 0);
+}
+
+.easy-button:pressed {
+    -fx-effect: none;
+    -fx-translate-y: 0;
+    -fx-background-color: #03861b;
+}
+
+.difficulty-button-selected {
+    -fx-background-color: #03861b; /* Зеленый фон для EASY */
+    -fx-text-fill: white;          /* Белый текст */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0, 0, 0);
+}
+
+.medium-button {
+    -fx-background-color: transparent;
+    -fx-border-color: #e4721a;
+    -fx-border-width: 2px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-text-fill: #3B3B3B;
+    -fx-cursor: hand;
+    -fx-font-family: "Benzin-Bold";
+    -fx-font-size: 12px;
+    -fx-pref-height: 37px;
+    -fx-pref-width: 100px;
+    -fx-padding: 8px 15px;
+    -fx-alignment: center;
+    -fx-transition: -fx-background-color 300ms cubic-bezier(.23, 1, 0.32, 1),
+    -fx-text-fill 300ms cubic-bezier(.23, 1, 0.32, 1),
+    -fx-effect 300ms cubic-bezier(.23, 1, 0.32, 1),
+    -fx-translate-y 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.medium-button:hover {
+    -fx-text-fill: #fff;
+    -fx-background-color: #e4721a;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0, 0, 0);
+}
+
+.medium-button:pressed {
+    -fx-effect: none;
+    -fx-translate-y: 0;
+}
+
+.medium-button.difficulty-button-selected {
+    -fx-background-color: #e4721a;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0, 0, 0);
+}
+
+.hard-button {
+    -fx-background-color: transparent;
+    -fx-border-color: #ff1a00;
+    -fx-border-width: 2px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-text-fill: #3B3B3B;
+    -fx-cursor: hand;
+    -fx-font-family: "Benzin-Bold";
+    -fx-font-size: 13px;
+    -fx-pref-height: 37px;
+    -fx-pref-width: 100px;
+    -fx-padding: 8px 15px;
+    -fx-alignment: center;
+    -fx-transition: -fx-background-color 300ms cubic-bezier(.23, 1, 0.32, 1),
+                    -fx-text-fill 300ms cubic-bezier(.23, 1, 0.32, 1),
+                    -fx-effect 300ms cubic-bezier(.23, 1, 0.32, 1),
+                    -fx-translate-y 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.hard-button:hover {
+    -fx-text-fill: #fff;
+    -fx-background-color: #ff1a00;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0, 0, 0);
+}
+
+.hard-button:pressed {
+    -fx-effect: none;
+    -fx-translate-y: 0;
+}
+
+.hard-button.difficulty-button-selected {
+    -fx-background-color: #ff1a00;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0, 0, 0);
+}
+
+.new_game_button {
+    /* Основные свойства */
+    -fx-background-color: transparent;
+    -fx-border-radius: 40em;
+    -fx-background-radius: 40em;
+    -fx-border-width: 0;
+    -fx-border-style: none;
+    -fx-text-fill: #000000;
+    -fx-cursor: hand;
+    -fx-font-family: "Benzin-Bold";
+    -fx-font-size: 1.2em;
+    -fx-letter-spacing: -0.24px;
+    -fx-outline: none;
+    -fx-padding: 8px 15px;
+    -fx-alignment: center;
+}
+
+/* При наведении */
+.new_game_button:hover {
+    -fx-background-color: #FFC229;
+    -fx-text-fill: #FFFF;
+    -fx-border-width: 3;
+    -fx-border-fill: #E0E0E0;
+    -fx-effect: innershadow(gaussian, #FF6314, 8, 0, 0, -6);
+}
+
+/* При нажатии */
+.new_game_button:pressed { /* Вместо :active используется :pressed в JavaFX */
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+}
+
+/* Для неактивных кнопок (добавим для полноты, хотя в оригинале нет) */
+.new_game_button:disabled {
+    -fx-opacity: 0.6;
+    -fx-cursor: default;
+    -fx-background-color: #E0E0E0; /* Серый фон */
+    -fx-text-fill: #A0A0A0; /* Серый текст */
+    -fx-effect: innershadow(gaussian, #C0C0C0, 6, 0, 0, -12); /* Серая тень */
+    -fx-scale-x: 1.0; /* Сброс масштаба */
+    -fx-scale-y: 1.0;
+}
+
+.leaderboardButton {
+    /* Основные свойства */
+    -fx-background-color: transparent; /* Белый фон кнопки */
+    -fx-border-radius: 40em; /* **ОЧЕНЬ БОЛЬШОЙ РАДИУС!** Сделает кнопку максимально скругленной (как пилюля/капсула), если высота позволяет.
+                                  В JavaFX 'em' не всегда работает так же, как в вебе для радиусов,
+                                  но 40em (или очень большое значение, например, 999px) обычно дает полностью скругленные края. */
+    -fx-background-radius: 40em;
+    -fx-border-width: 0;
+    -fx-border-style: none;
+    -fx-text-fill: #000000;
+    -fx-cursor: hand;
+    -fx-font-family: "Benzin-Bold";
+    -fx-font-size: 10px;
+    -fx-letter-spacing: -0.24px;
+    -fx-outline: none;
+    -fx-padding: 10px 10px;
+    -fx-alignment: center;
+    -fx-transition: -fx-background-color 1s ease-out ,
+                    -fx-text-fill 1s ease-out ,
+                    -fx-effect 1s ease-out ,
+                    -fx-translate-y 1s ease-out ;
+
+}
+
+/* При наведении */
+.leaderboardButton:hover {
+    -fx-background-color: #0080ff;
+    -fx-text-fill: #FFFF;
+    -fx-border-width: 3;
+    -fx-border-fill: #E0E0E0;
+    -fx-effect: innershadow(gaussian, #0cc7e8, 8, 0, 0, -6); /* Новая внутренняя тень */
+    -fx-scale-x: 1.1; /* Масштабирование по X */
+    -fx-scale-y: 1.1; /* Масштабирование по Y (вместе имитируют transform: scale) */
+    -fx-transition: -fx-background-color 1s ease-out
+}
+
+/* При нажатии */
+.leaderboardButton:pressed { /* Вместо :active используется :pressed в JavaFX */
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+/* Для неактивных кнопок (добавим для полноты, хотя в оригинале нет) */
+.leaderboardButton:disabled {
+    -fx-opacity: 0.6;
+    -fx-cursor: default;
+    -fx-background-color: #E0E0E0; /* Серый фон */
+    -fx-text-fill: #A0A0A0; /* Серый текст */
+    -fx-effect: innershadow(gaussian, #C0C0C0, 6, 0, 0, -12); /* Серая тень */
+    -fx-scale-x: 1.0; /* Сброс масштаба */
+    -fx-scale-y: 1.0;
+}
+
+.ExitButton {
+    /* Основные свойства */
+    -fx-background-color: transparent; /* Белый фон кнопки */
+    -fx-border-radius: 15px; /* **ОЧЕНЬ БОЛЬШОЙ РАДИУС!** Сделает кнопку максимально скругленной (как пилюля/капсула), если высота позволяет.
+                                  В JavaFX 'em' не всегда работает так же, как в вебе для радиусов,
+                                  но 40em (или очень большое значение, например, 999px) обычно дает полностью скругленные края. */
+    -fx-background-radius: 15px;
+    -fx-border-width: 1;
+    -fx-border-style: none;
+    -fx-text-fill: #111111;
+    -fx-cursor: hand;
+    -fx-font-family: "Benzin-Bold";
+    -fx-font-size: 10px;
+    -fx-letter-spacing: -0.24px;
+    -fx-outline: none;
+    -fx-padding: 10px 10px;
+    -fx-alignment: center;
+    -fx-transition: -fx-background-color 1s ease-out ,
+    -fx-text-fill 1s ease-out ,
+    -fx-effect 1s ease-out ,
+    -fx-translate-y 1s ease-out ;
+
+}
+
+/* При наведении */
+.ExitButton:hover {
+    -fx-background-color: #ff0000;
+    -fx-text-fill: #FFFF;
+    -fx-border-width: 3;
+    -fx-border-fill: #E0E0E0;
+    -fx-effect: innershadow(gaussian, #E0E0E0, 8, 0, 0, -6); /* Новая внутренняя тень */
+    -fx-scale-x: 1.1; /* Масштабирование по X */
+    -fx-scale-y: 1.1; /* Масштабирование по Y (вместе имитируют transform: scale) */
+    -fx-transition: -fx-background-color 1s ease-out ,
+    -fx-text-fill 1s ease-out ,
+    -fx-effect 1s ease-out ,
+    -fx-translate-y 1s ease-out ;
+}
+
+/* При нажатии */
+.ExitButton:pressed { /* Вместо :active используется :pressed в JavaFX */
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+}
+
+/* Для неактивных кнопок (добавим для полноты, хотя в оригинале нет) */
+.ExitButton:disabled {
+    -fx-opacity: 0.6;
+    -fx-cursor: default;
+    -fx-background-color: #E0E0E0; /* Серый фон */
+    -fx-text-fill: #A0A0A0; /* Серый текст */
+    -fx-effect: innershadow(gaussian, #C0C0C0, 6, 0, 0, -12); /* Серая тень */
+    -fx-scale-x: 1.0; /* Сброс масштаба */
+    -fx-scale-y: 1.0;
+}
+
+.dialog-buttons .button {
+    -fx-min-height: 40px;
+    -fx-font-size: 1.1em;
+    -fx-padding: 8px 15px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-color: #007BFF;
+    -fx-text-fill: white;
+    -fx-border-color: #007BFF;
+}
+.dialog-buttons .button:hover {
+    -fx-background-color: #0056b3;
+    -fx-border-color: #0056b3;
+}
+
+.start-again { /* ИЗМЕНИЛИ НАЗВАНИЕ КЛАССА */
+    -fx-background-color: transparent;
+    -fx-border-color: #03861b;
+    -fx-border-width: 2px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-text-fill: #3B3B3B;
+    -fx-cursor: hand;
+    -fx-font-family: "Benzin-Bold";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-max-height: 30px;
+    -fx-max-width: 150px;
+    -fx-padding: 8px 15px;
+    -fx-alignment: center;
+    -fx-transition: -fx-background-color 300ms cubic-bezier(.23, 1, 0.32, 1),
+    -fx-text-fill 300ms cubic-bezier(.23, 1, 0.32, 1),
+    -fx-effect 300ms cubic-bezier(.23, 1, 0.32, 1),
+    -fx-translate-y 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.start-again:hover {
+    -fx-text-fill: #fff;
+    -fx-background-color: #03861b;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0, 0, 0);
+}
+
+.start-again:pressed {
+    -fx-effect: none;
+    -fx-translate-y: 0;
+}
+
+.start-again:disabled {
+    -fx-opacity: 0.5;
+    -fx-cursor: default;
+    -fx-border-color: #A0A0A0;
+    -fx-text-fill: #A0A0A0;
+}
+
+.main-menu {
+    -fx-background-color: transparent;
+    -fx-border-color: #ff1a00;
+    -fx-border-width: 2px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-text-fill: #3B3B3B;
+    -fx-cursor: hand;
+    -fx-font-family: "Benzin-Bold";
+    -fx-font-size: 13px;
+    -fx-max-height: 37px;
+    -fx-max-width: 160px;
+    -fx-padding: 8px 15px;
+    -fx-alignment: center;
+    -fx-transition: -fx-background-color 300ms cubic-bezier(.23, 1, 0.32, 1),
+    -fx-text-fill 300ms cubic-bezier(.23, 1, 0.32, 1),
+    -fx-effect 300ms cubic-bezier(.23, 1, 0.32, 1),
+    -fx-translate-y 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.main-menu:hover {
+    -fx-text-fill: #fff;
+    -fx-background-color: #ff1a00;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0, 0, 0);
+}
+
+.main-menu:pressed {
+    -fx-effect: none;
+    -fx-translate-y: 0;
+}
+
+.main-menu:disabled {
+    -fx-opacity: 0.5;
+    -fx-cursor: default;
+    -fx-border-color: #A0A0A0;
+    -fx-text-fill: #A0A0A0;
+}
+.timer-label{
+    -fx-border-color: #0056b3;
+    -fx-border-width: 2px;
+    -fx-border-radius: 40;
+    -fx-pref-width: 85px;
+    -fx-alignment: center;
+    -fx-text-fill: black;
+}
+.minesCounterLabel{
+    -fx-border-color: #ff1a00;
+    -fx-border-width: 2px;
+    -fx-border-radius: 40;
+    -fx-pref-width: 100px;
+    -fx-alignment: center;
+    -fx-text-fill: black;
+}
