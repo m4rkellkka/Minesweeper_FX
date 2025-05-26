@@ -162,7 +162,7 @@ public class App extends Application {
         selectedDifficultyMines = MINES_EASY;
         selectedDifficultyName = DIFFICULTY_EASY;
         highlightSelectedDifficultyButton(easyButton);
-        System.out.println("Selected difficulty: Easy"); // DEBUG: Console output for selection
+        System.out.println("Selected difficulty: Easy");
     }
 
     @FXML
@@ -171,7 +171,7 @@ public class App extends Application {
         selectedDifficultyMines = MINES_MEDIUM;
         selectedDifficultyName = DIFFICULTY_MEDIUM;
         highlightSelectedDifficultyButton(mediumButton);
-        System.out.println("Selected difficulty: Medium"); // DEBUG: Console output for selection
+        System.out.println("Selected difficulty: Medium");
     }
 
     @FXML
@@ -180,7 +180,7 @@ public class App extends Application {
         selectedDifficultyMines = MINES_HARD;
         selectedDifficultyName = DIFFICULTY_HARD;
         highlightSelectedDifficultyButton(hardButton);
-        System.out.println("Selected difficulty: Hard"); // DEBUG: Console output for selection
+        System.out.println("Selected difficulty: Hard");
     }
 
     @FXML
@@ -188,13 +188,13 @@ public class App extends Application {
         String enteredName = nameField.getText().trim();
         currentPlayerName = enteredName.isEmpty() ? DEFAULT_PLAYER_NAME : enteredName;
 
-        System.out.println("Starting game with player: " + currentPlayerName + " and difficulty: " + selectedDifficultyName); // DEBUG: Game start info
+        System.out.println("Starting game with player: " + currentPlayerName + " and difficulty: " + selectedDifficultyName);
         showGameScreen();
     }
 
     @FXML
     private void showLeaderboardScreen() {
-        System.out.println("Showing leaderboard screen."); // DEBUG: Leaderboard navigation
+        System.out.println("Showing leaderboard screen.");
 
         BorderPane leaderboardRoot = new BorderPane();
         VBox mainLayout = new VBox(20);
