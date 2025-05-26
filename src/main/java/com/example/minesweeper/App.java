@@ -156,10 +156,6 @@ public class App extends Application {
         highlightSelectedDifficultyButton(getButtonForDifficulty(selectedDifficultyName));
     }
 
-    /**
-     * Handles click event for the "Easy" difficulty button.
-     * Sets game difficulty to Easy and updates UI.
-     */
     @FXML
     private void handleEasyClick() {
         selectedDifficultyGridSize = GRID_SIZE_EASY;
@@ -169,10 +165,6 @@ public class App extends Application {
         System.out.println("Selected difficulty: Easy"); // DEBUG: Console output for selection
     }
 
-    /**
-     * Handles click event for the "Medium" difficulty button.
-     * Sets game difficulty to Medium and updates UI.
-     */
     @FXML
     private void handleMediumClick() {
         selectedDifficultyGridSize = GRID_SIZE_MEDIUM;
@@ -182,10 +174,6 @@ public class App extends Application {
         System.out.println("Selected difficulty: Medium"); // DEBUG: Console output for selection
     }
 
-    /**
-     * Handles click event for the "Hard" difficulty button.
-     * Sets game difficulty to Hard and updates UI.
-     */
     @FXML
     private void handleHardClick() {
         selectedDifficultyGridSize = GRID_SIZE_HARD;
@@ -195,10 +183,6 @@ public class App extends Application {
         System.out.println("Selected difficulty: Hard"); // DEBUG: Console output for selection
     }
 
-    /**
-     * Handles click event for the "Start Game" button.
-     * Validates player name and transitions to the game screen.
-     */
     @FXML
     private void handleStartGame() {
         String enteredName = nameField.getText().trim();
@@ -208,10 +192,6 @@ public class App extends Application {
         showGameScreen();
     }
 
-    /**
-     * Creates and displays the leaderboard screen.
-     * This method is an FXML event handler.
-     */
     @FXML
     private void showLeaderboardScreen() {
         System.out.println("Showing leaderboard screen."); // DEBUG: Leaderboard navigation
